@@ -1,8 +1,8 @@
 const initialState = {
-  favorites: [],
+  favorites: [{ title: "Movie", id: 1 }],
   displayFavorites: true,
 };
-const reducer = (state = initialState, action) => {
+const favoritesReducer = (state = initialState, action) => {
   switch (action.type) {
     default:
       return state;
